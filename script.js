@@ -1,11 +1,16 @@
 let votos = 0
-
+let yaVoto = false;
 const boton = document.getElementById("votar")
 const textoVotos = document.getElementById("contador")
 
 boton.addEventListener("click", function(){
-
+if(yaVoto === true){
+  alert("Ya has votado. Gracias por tu participación.")
+  return
+} else{
 votos = votos + 1
+yaVoto = true
+}
 
 textoVotos.innerText = "Votos: " + votos
 
