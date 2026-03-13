@@ -13,18 +13,19 @@ console.log("voto registrado")
 
 })
 
-
 const form = document.getElementById("formPropuesta")
 
-form.addEventListener("submit", function(e){
+form.addEventListener("submit", function(e) {
+  e.preventDefault()
 
-let nombre = document.getElementById("nombre").value
-let idea = document.getElementById("idea").value
+  let nombre = document.getElementById("nombre").value
+  let idea = document.getElementById("idea").value
 
-if(nombre = "" || idea == ""){
+  if (nombre.trim() === "" || idea.trim() === "") {
+    document.getElementById("mensaje").innerText = "Completá todos los campos."
+    return
+  }
 
-document.getElementById("mensaje").innerText = "Completa todos los campos"
-
-}
-
+  document.getElementById("mensaje").innerText = "¡Propuesta enviada correctamente!"
+  form.reset()
 })
