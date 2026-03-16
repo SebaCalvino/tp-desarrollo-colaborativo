@@ -1,59 +1,88 @@
-body{
-font-family: Arial, sans-serif
-margin:0;
-background:#f4f4f4;
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: #eef2f7;
+  color: #1a2535;
 }
 
-.navbar{
-display:flex;
-justify-content:space-between;
-background:#003366;
-color:white;
-padding:15px;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #003366;
+  color: white;
+  padding: 16px 28px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
-nav a{
-color:white;
-margin-left:15px
-text-decoration:none;
+nav a {
+  color: rgba(255,255,255,0.85);
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s;
 }
 
-.hero{
-text-align:center;
-padding:80px;
-background:linear-gradient(135deg,#2193b0,#6dd5ed);
-color:white;
+nav a:hover {
+  color: white;
 }
 
-button{
-background:#ff9800;
-border:none;
-padding:12px 20px;
-color:white;
-cursor:pointer;
+.hero {
+  text-align: center;
+  padding: 90px 40px;
+  background: linear-gradient(135deg, #1a7fa0, #6dd5ed);
+  color: white;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.15);
 }
 
-button hover{
-background:#e68900;
+button {
+  background: #ff9800;
+  border: none;
+  padding: 12px 24px;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  box-shadow: 0 3px 10px rgba(255,152,0,0.35);
+  transition: background 0.2s, transform 0.15s;
 }
 
-.propuesta{
-width:400px;
-margin:auto;
-margin-top:40px;
-display:flex;
-flex-direction:column;
+button:hover {
+  background: #e68900;
+  transform: translateY(-1px);
 }
 
-input{
-padding:10px;
-margin-bottom:10px;
+.propuesta {
+  width: 400px;
+  margin: 48px auto;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 32px;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
 }
 
-footer{
-text-align:center;
-margin-top:50px;
-padding:20px;
-background:#003366;
-color:white;
+input {
+  padding: 11px 13px;
+  margin-bottom: 12px;
+  border: 1.5px solid #d1d9e0;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: border-color 0.2s;
+  outline: none;
+}
+
+input:focus {
+  border-color: #2193b0;
+}
+
+footer {
+  text-align: center;
+  margin-top: 60px;
+  padding: 24px;
+  background: #003366;
+  color: rgba(255,255,255,0.75);
+  font-size: 0.875rem;
 }

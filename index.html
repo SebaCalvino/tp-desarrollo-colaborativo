@@ -1,66 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Ideas Último Año</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Ideas Último Año</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header class="navbar">
-
-<h2>Ideas Último Año</h2>
-
-<nav>
-<a href="#">Inicio</a>
-<a href="#">Propuestas</a>
-<a href="#">Contacto</a>
-</nav>
-
+  <h1>Ideas Último Año</h1>
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Propuestas</a>
+    <a href="#">Contacto</a>
+  </nav>
 </header>
 
+<main>
+  <section class="hero">
+    <h2>Propuestas para el último año</h2>
+    <p>Votá ideas para hacer este último año inolvidable.</p>
+    <button id="votar" type="button">Apoyar esta idea</button>
+    <p id="contador" aria-live="polite">Votos: 0</p>
+  </section>
 
-<section class="hero">
+  <section class="propuesta">
+    <h2>Enviar una propuesta</h2>
+    <form id="formPropuesta">
+      <label for="nombre">Tu nombre</label>
+      <input type="text" id="nombre" name="nombre" required>
 
-<h1>Propuestas para el último año</h1>
-<p>Votá ideas para hacer este último año inolvidable.</p>
+      <label for="idea">Tu propuesta</label>
+      <input type="text" id="idea" name="idea" required>
 
-<button id="votar">Apoyar esta idea</button>
-
-<p id="contador">Votos: 0</p>
-
-</section>
-
-
-<section class="propuesta">
-
-<h2>Enviar una propuesta</h2>
-
-<form id="formPropuesta">
-
-<label>Tu nombre</label>
-<input type="text" id="nombre">
-
-<label>Tu propuesta</label>
-<input type="text" id="idea">
-
-<button>Enviar propuesta</button>
-
-<p id="mensaje"></p>
-
-</form>
-
-</section>
-
+      <button type="submit">Enviar propuesta</button>
+      <p id="mensaje"></p>
+    </form>
+  </section>
+</main>
 
 <footer>
-
-<p>Promoción 2026</p>
-
+  <p>Promoción 2026</p>
 </footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>
